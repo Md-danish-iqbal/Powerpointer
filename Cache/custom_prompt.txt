@@ -1,0 +1,70 @@
+
+#Title: Custom PPT Demo
+#Slide: 2
+#Header: Executive Summary Template
+#Content: 1
+Summary Title
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad quis exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat fugiat nulla pariatur.
+#Content: 2
+Your Text Here
+Lorem ipsum dolor sit amet, do eiusmod tempor labore sed labore
+#Content: 3
+Your Text Here
+Lorem ipsum dolor sit amet, do
+eiusmod tempor labore sed labore
+#Content: 4
+Total Investment
+$ 70.4k
+#Content: 5
+Leads
+2500+
+#Content: 6
+Cost Per Lead
+$22.34
+#Content: 7
+Key Factors
+• Eiusmod tempor incididunt ut labore
+• Consectetur adipiscing elit sed do
+• Ipsum dolor sit amet eiusmod
+#Content: 8
+Cost of analysis
+22k
+Eiusmod tempor incididunt
+25k
+Eiusmod tempor incididunt
+#Content: 9
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris commodo consequat.
+#Slide: 3
+#Header: Executive Summery
+#Content: 1
+Oliver Wyman conducted a broad market survey of US and Canadian utilities and contacted many regulators directly to assess how common productivity measures were used. In total we made over 350 contacts to:
+-In Canada: 20 utilities and 8 Commissions
+-In the US: 11 utilities and 9 Commissions
+#Content: 2
+This research found:
+- No commission was found to routinely measure productivity directly. Instead commissions focused on 'outcome' metrics of overall Service Quality Metrics (SQM) and total costs. In the majority of cases, the commissions directed us to contact utilities directly as the management of productivity was considered part of their internal management.
+- Most utilities did look at productivity metrics internally as part of a balanced scorecard to support understanding of trends of the SQM and Cost metrics reported to commissions. The productivity metrics found suggest that none of the participants track productivity across all business functions.
+#Content: 3
+• After analyzing Hydro One's major costs and interviewing many of their senior staff, a number of metrics have been suggested as candidates to measure productivity, which account for 23% of total O&M and Capex costs.
+#Slide: 4
+#Header: Executive Summary Template
+#Content: 1
+Summary Title
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad quis exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat fugiat nulla pariatur.
+#Content: 2
+Your Text Here
+Lorem ipsum dolor sit amet, do eiusmod tempor labore sed labore
+#Content: 3
+Your Text Here
+Lorem ipsum dolor sit amet, do
+eiusmod tempor labore sed labore
+#Content: 4
+Total Investment
+$ 70.4k
+#Content: 5
+Leads
+2500+
+#Content: 6
+Your Text Here
+Lorem ipsum dolor sit amet, do
+eiusmod tempor labore sed labore
