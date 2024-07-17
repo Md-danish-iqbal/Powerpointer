@@ -1,14 +1,22 @@
 import streamlit as st
-from pptx import Presentation
 from io import BytesIO
-import time,os
+import time
+import os
 from custome_function_main import get_bot_response
 
 
-# Function to generate the PowerPoint presentation
+def generate_ppt(topic: str, theme: str) -> tuple:
+    """
+    Function to generate the PowerPoint presentation based on the selected topic and theme.
 
+    Parameters:
+    topic (str): The topic for the PowerPoint presentation.
+    theme (str): The selected theme for the PowerPoint presentation.
 
-def generate_ppt(topic, theme):
+    Returns:
+    tuple: A tuple containing the PPT file path and the PPT file name.
+    """
+    # Design mapping based on theme selection
     design = {
         "Theme A": "Design-1",
         "Theme B": "Design-2",
@@ -21,25 +29,22 @@ def generate_ppt(topic, theme):
         "Custom Theme 2": "Design-9",
     }
 
+    # Log the selected topic and design
     print(topic, design[theme])
 
+    # Generate the bot response based on topic and design
     ppt_path, ppt_name = get_bot_response(topic, design[theme])
+
+    # Return the PPT file path and name
     return ppt_path, ppt_name
 
 
+def main() -> None:
+    """
+    Main function to create the Streamlit UI for AI-Enhanced Presentation Maker.
+    """
 
-# Streamlit UI
-def main():
-    page_bg_img = '''
-    <style>
-    body {
-    background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
-    background-size: cover;
-    }
-    </style>
-    '''
-
-    st.markdown(page_bg_img, unsafe_allow_html=True)
+    # Set the title of the Streamlit app
     st.title("AI-Enhanced Presentation Maker by Gemini")
 
     # Input for topic
@@ -64,7 +69,7 @@ def main():
                 time.sleep(0.10)
                 progress_bar.progress(percent_complete)
             st.success(f"Prompt for '{topic}' generated successfully!")
-            st.warning(f"Wait !!!  Slides for PPT is generating Initialized ")
+            st.warning(f"Wait !!! Slides for PPT are being generated")
 
             # Simulate PPT slides generation progress
             progress_bar = st.progress(0)
@@ -77,16 +82,18 @@ def main():
             ppt_path, ppt_name = generate_ppt(topic, theme)
             st.success(f"PPT Slides for '{topic}' created successfully!")
 
+            # Read the PPT file as bytes
             with open(ppt_path, "rb") as f:
                 ppt_bytes = f.read()
 
-                # Download link for the PPT file
+            # Download link for the PPT file
             st.download_button(
                 label=f"Download {os.path.basename(ppt_path)}",
                 data=ppt_bytes,
                 file_name=os.path.basename(ppt_path),
                 mime="application/vnd.openxmlformats-officedocument.presentationml.presentation",
             )
+
 
 if __name__ == "__main__":
     main()
